@@ -51,18 +51,26 @@ On the Google Cloud console, on the top right toolbar, click the Activate Cloud 
 
 For convenience, enter your chosen location into an environment variable called LOCATION. Enter one of these commands:
 
-```export LOCATION=US```
+```
+export LOCATION=US
+```
 
 Or
 
-```export LOCATION=EU```
+```
+export LOCATION=EU
+```
 
 Or
 
-```export LOCATION=ASIA```
+```
+export LOCATION=ASIA
+```
 
 In Cloud Shell, the DEVSHELL_PROJECT_ID environment variable contains your project ID. Enter this command to make a bucket named after your project ID:
-```gcloud storage buckets create -l $LOCATION gs://$DEVSHELL_PROJECT_ID```
+```
+gcloud storage buckets create -l $LOCATION gs://$DEVSHELL_PROJECT_ID
+```
 ![t3 - p4 - activating cloud shell](https://github.com/user-attachments/assets/fd6c66f0-1f04-4f36-88d8-39b121c443d0)
 
 
@@ -71,11 +79,17 @@ If prompted, click Authorize to continue.
 
 
 Retrieve a banner image from a publicly accessible Cloud Storage location:
-```gcloud storage cp gs://cloud-training/gcpfci/my-excellent-blog.png my-excellent-blog.png```
+```
+gcloud storage cp gs://cloud-training/gcpfci/my-excellent-blog.png my-excellent-blog.png
+```
 Copied!
 Copy the banner image to your newly created Cloud Storage bucket:
-```gcloud storage cp my-excellent-blog.png gs://$DEVSHELL_PROJECT_ID/my-excellent-blog.png```
-Copied!
+```
+gcloud storage cp my-excellent-blog.png gs://$DEVSHELL_PROJECT_ID/my-excellent-blog.png
+```
+
 Modify the Access Control List of the object you just created so that it's readable by everyone:
-```gsutil acl ch -u allUsers:R gs://$DEVSHELL_PROJECT_ID/my-excellent-blog.png```
+```
+gsutil acl ch -u allUsers:R gs://$DEVSHELL_PROJECT_ID/my-excellent-blog.png
+```
 ![t3 - p4 - last step](https://github.com/user-attachments/assets/37081780-940d-4865-a53a-667186865c1a)
