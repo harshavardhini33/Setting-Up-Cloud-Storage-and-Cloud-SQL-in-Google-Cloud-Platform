@@ -1,5 +1,6 @@
 # Setting Up Cloud Storage and Cloud SQL in Google Cloud Platform
-## Deploy a web server VM instance
+
+## Task 1 - Deploy a web server VM instance
 In the Google Cloud console, on the Navigation menu (Navigation menu icon), click Compute Engine > VM instances.
 
 Click Create Instance.
@@ -32,7 +33,8 @@ service apache2 restart
 ![pic3 - startup script](https://github.com/user-attachments/assets/7ac67fc9-e168-4061-a153-7706aaeb8525)
 
 
-```Note: Be sure to supply that script as the value of the Startup script field. If you accidentally put it into another field, it won't be executed when the VM instance starts.```
-Leave the remaining settings as their defaults, and click Create.
+```Note: Be sure to supply that script as the value of the Startup script field. If you accidentally put it into another field, it won't be executed when the VM instance starts.
+Leave the remaining settings as their defaults, and click Create.```
+
 ```Note: Instance can take about two minutes to launch and be fully available for use.
 On the VM instances page, copy the bloghost VM instance's internal and external IP addresses to a text editor for use later in this lab.```
