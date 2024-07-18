@@ -104,14 +104,19 @@ For Choose a database engine, select Choose MySQL.
 For Instance ID, type blog-db, and for Root password type a password of your choice.
 ![t4 - p1 - sql instance](https://github.com/user-attachments/assets/a93e3434-6ab1-4e3d-85b0-45b6fb2a85d7)
 
+```
 Note: Choose a password that you remember. There's no need to obscure the password because you use mechanisms to connect that aren't open access to everyone.
 For Choose a Cloud SQL edition, click Enterprise and then select Sandbox from the dropdown.
-
+```
 Select Single zone and set the region and zone assigned by Qwiklabs.
 
+```
 Note: This is the same region and zone into which you launched the bloghost instance. The best performance is achieved by placing the client and the database close to each other.
 Click Create Instance.
+```
+```
 Note: Wait for the instance to finish deploying. It will take a few minutes.
+```
 Click the name of the instance, blog-db, to open its details page.
 ![t4 - p2 - uploading blog-db](https://github.com/user-attachments/assets/04609eb6-a5c8-4420-af49-b9b31daa297d)
 
